@@ -1,22 +1,27 @@
 # Home List Products
 
-# Tools
+### Tools
 
- - React 16
- - Redux
- - Reactstrap
- - Styled-components
- - Atomic design
+ - Client
+
+   - React 16
+   - Redux
+   - Reactstrap
+   - Styled-components
+   - Atomic design
+   
+ - Api
  
-# Installation
-    
+   - Json-server
+ 
+### Installation
+     
     $npm i
+    $cd api && $npm i
+    $cd ../client && npm i
     
-# Usage
+### Usage
 
-    $npm start
-    
-# Tests + Coverage
+From root folder:
 
-    $npm test
-    $npm run coverage
+    $npm start // it starts server and client projects

@@ -1,0 +1,79 @@
+{
+  "name": "home-list-products",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.0.0",
+    "gh-pages": "^1.1.0",
+    "react": "^16.3.1",
+    "react-app-rewired": "^1.5.0",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^5.0.0",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.4.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^3.2.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "faker": "^4.1.0",
+    "jest-enzyme": "^6.0.1",
+    "react-cosmos": "^4.4.0",
+    "react-cosmos-redux-proxy": "^4.4.0",
+    "react-cosmos-test": "^4.4.0",
+    "react-test-renderer": "^16.4.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-mock-store": "^1.5.1",
+    "rosie": "^2.0.1",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-scripts build",
+    "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom",
+    "coverage": "npm test -- --coverage",
+    "cosmos": "cosmos"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js}",
+      "!<rootDir>/node_modules/",
+      "!src/*.{js}",
+      "!src/cosmos.proxies.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "jest",
+      "describe",
+      "it",
+      "xit",
+      "expect",
+      "FormData",
+      "alert",
+      "localStorage",
+      "beforeEach"
+    ]
+  }
+}
