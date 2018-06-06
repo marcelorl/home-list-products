@@ -7,8 +7,9 @@ import {
 import logo from './images/logo.png'
 
 const NavbarContainer = styled(Navbar)`
-  padding: 25px 0;
+  background-color: #fcfcfc;
   box-shadow: 1px 1px 1px #d3d3d3;
+  padding: 25px 0;
 `
 
 const Logo = styled.img`

@@ -1,0 +1,5 @@
+{
+  "main": "./ListProducts.js",
+  "name": "ListProducts",
+  "private": true
+}
