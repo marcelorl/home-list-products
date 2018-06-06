@@ -8,6 +8,7 @@ import logo from './images/logo.png'
 
 const NavbarContainer = styled(Navbar)`
   padding: 25px 0;
+  box-shadow: 1px 1px 1px #d3d3d3;
 `
 
 const Logo = styled.img`
@@ -16,8 +17,7 @@ const Logo = styled.img`
 `
 
 const Header = props =>
-  <NavbarContainer
-    className='d-flex justify-content-center container-fluid px-0' color='faded' light expand='lg' fixed='top'>
+  <NavbarContainer className='d-flex justify-content-center container-fluid px-0' color='faded' light expand='lg'>
     <Logo src={logo} alt="logo"/>
   </NavbarContainer>
 

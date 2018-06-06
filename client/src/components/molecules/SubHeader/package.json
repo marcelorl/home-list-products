@@ -1,0 +1,5 @@
+{
+  "main": "./SubHeader.js",
+  "name": "SubHeader",
+  "private": true
+}
