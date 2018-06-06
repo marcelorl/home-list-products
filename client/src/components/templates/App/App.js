@@ -1,6 +1,8 @@
 import React from 'react'
 
+import Header from '../../atoms/Header'
+
 const App = props =>
-  <div>123</div>
+  <Header />
 
 export default App

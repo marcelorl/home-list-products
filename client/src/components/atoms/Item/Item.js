@@ -19,3 +19,5 @@ const Item = props =>
 Item.propTypes = {
 
 }
+
+export default Item
