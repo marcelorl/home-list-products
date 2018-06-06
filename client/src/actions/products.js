@@ -13,12 +13,9 @@ export const fetchProducts = injection => {
 
   return dispatch => {
     dispatch(requestProducts())
-    return axios().get('/product')
-      .then(response => {
-        return dispatch(requestProductsSuccess({ products: response }))
-      })
-      .catch(err =>
-        dispatch(requestProductsFail(new Error(err)))
-      )
+
+    return axios.get('/products')
+      .then(({ data: { entries } }) => dispatch(requestProductsSuccess({ products: entries })))
+      .catch(err => dispatch(requestProductsFail(new Error(err))))
   }
 }

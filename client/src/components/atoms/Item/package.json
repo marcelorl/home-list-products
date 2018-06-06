@@ -1,0 +1,5 @@
+{
+  "main": "./Item.js",
+  "name": "Item",
+  "private": true
+}

@@ -9,6 +9,7 @@
    - Reactstrap
    - Styled-components
    - Atomic design
+   - Jest + React-cosmos
    
  - Api
  
