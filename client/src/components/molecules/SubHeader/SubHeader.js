@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
-  Container,
+  Container
 } from 'reactstrap'
 
 import Breadcrumb from '../../atoms/Breadcrumb'
@@ -29,7 +29,7 @@ const SubHeader = props =>
       <div>
         O melhor da moda masculina atual e as peças mais recentes das marcas internacionais chegaram à seleção online da
         Farfetch. Descubra novidades da moda masculina e tendências que grandes designers para renovar o guarda-roupas,
-        de <a href="#">Salvatore Ferragamo</a> à <a href="#">Burberry</a>.
+        de <a href='#'>Salvatore Ferragamo</a> à <a href='#'>Burberry</a>.
       </div>
     </Container>
   </NavbarContainer>

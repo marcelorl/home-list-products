@@ -6,7 +6,7 @@ import {
 
 const products = [{}, {}, {}]
 
-const err =  new TypeError('ERROR');
+const err = new TypeError('ERROR')
 
 describe('#products', () => {
   describe('#actions', () => {

@@ -95,6 +95,9 @@ const Item = props => {
 Item.propTypes = {
   brandName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  priceFormatted: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired
 }
 
 export default Item

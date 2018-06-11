@@ -19,7 +19,7 @@ const Logo = styled.img`
 
 const Header = props =>
   <NavbarContainer className='d-flex justify-content-center container-fluid px-0' color='faded' light expand='lg'>
-    <Logo src={logo} alt="logo"/>
+    <Logo src={logo} alt='logo' />
   </NavbarContainer>
 
 export default Header
