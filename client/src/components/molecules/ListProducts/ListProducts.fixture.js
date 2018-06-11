@@ -1,5 +1,12 @@
 import ListProducts from './ListProducts'
 
 export default {
-  component: ListProducts
+  component: ListProducts,
+  props: {
+    products: {
+      error: '',
+      loading: false,
+      list: []
+    }
+  }
 }
