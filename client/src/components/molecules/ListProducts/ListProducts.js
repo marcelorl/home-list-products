@@ -1,7 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {
-  Container,
+  Alert,
+  Container
 } from 'reactstrap'
 
 import Item from '../../atoms/Item'
@@ -12,11 +14,52 @@ const ListProductsContainer = styled.div`
   width: 100%;
 `
 
-const ListProducts = props =>
-  <ListProductsContainer>
-    <Container>
+const ListContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+`
 
-    </Container>
-  </ListProductsContainer>
+const ListProducts = ({ products: { error, list, loading } }) => {
+  if (error) {
+    return (
+      <Alert color='danger'>{error}</Alert>
+    )
+  }
+
+  if (loading) {
+    return (
+      <div>Carregando ...</div>
+    )
+  }
+
+  return (
+    <ListProductsContainer>
+      <Container>
+        <ListContainer>
+          {list.map(item =>
+            <Item
+              key={item.id}
+              brandName={item.brand.name}
+              description={item.shortDescription}
+              image={item.images[1].url}
+              price={item.price}
+              priceFormatted={item.formattedPrice}
+              slug={item.slug}
+            />
+          )}
+        </ListContainer>
+      </Container>
+    </ListProductsContainer>
+  )
+}
+
+ListProducts.propTypes = {
+  products: PropTypes.shape({
+    error: PropTypes.string,
+    list: PropTypes.array,
+    loading: PropTypes.bool
+  }).isRequired
+}
 
 export default ListProducts

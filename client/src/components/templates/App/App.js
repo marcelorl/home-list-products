@@ -11,15 +11,11 @@ const AppContainer = styled.div`
   }
 `
 
-const App = props => {
-  return (
-    <AppContainer>
-      <Header />
-      <SubHeader />
-      <ListProducts />
-    </AppContainer>
-  )
-}
-
+const App = ({ products }) =>
+  <AppContainer>
+    <Header />
+    <SubHeader />
+    <ListProducts products={products} />
+  </AppContainer>
 
 export default App

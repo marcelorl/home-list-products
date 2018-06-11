@@ -7,22 +7,19 @@ import {
 } from '../actions/products'
 
 const INITIAL_STATE = {
-  loading: false, list: [], error: ''
+  loading: false, list: [], error: null
 }
 
 const reducer = handleActions({
   [requestProducts]: (state, action) => ({
-    error: '',
     loading: true,
     list: []
   }),
   [requestProductsFail]: (state, action) => ({
     error: `Error - ${action.payload}`,
-    loading: false,
-    list: []
+    loading: false
   }),
   [requestProductsSuccess]: (state, action) => ({
-    error: '',
     loading: false,
     list: action.payload.products
   })
