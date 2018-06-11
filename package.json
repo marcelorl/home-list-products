@@ -30,8 +30,23 @@
     "concurrently": "^3.5.1"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "lint-staged": "^7.1.3",
     "snazzy": "^7.1.1",
     "standard": "^11.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "jest",
+      "describe",
+      "it",
+      "xit",
+      "expect",
+      "FormData",
+      "alert",
+      "localStorage",
+      "beforeEach"
+    ]
   }
 }

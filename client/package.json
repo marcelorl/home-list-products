@@ -19,7 +19,6 @@
     "styled-components": "^3.2.5"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
@@ -54,19 +53,5 @@
         "statements": 90
       }
     }
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "globals": [
-      "jest",
-      "describe",
-      "it",
-      "xit",
-      "expect",
-      "FormData",
-      "alert",
-      "localStorage",
-      "beforeEach"
-    ]
   }
 }
