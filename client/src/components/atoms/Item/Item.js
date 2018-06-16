@@ -83,8 +83,8 @@ const Item = props => {
           <CustomCardTitle>{props.brandName}</CustomCardTitle>
           <CustomCardSubtitle>{props.description}</CustomCardSubtitle>
           <div>
-            <div>{props.priceFormatted}</div>
-            <div>{calcParcels()}</div>
+            <div className='item__price'>{props.priceFormatted}</div>
+            <div className='item__parcels'>{calcParcels()}</div>
           </div>
         </CardBody>
       </Card>

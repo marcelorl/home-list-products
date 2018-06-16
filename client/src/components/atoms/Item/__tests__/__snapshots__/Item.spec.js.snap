@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Item atom renders component 1`] = `
+<Item
+  brandName="brandName"
+  description="description"
+  image="test.png"
+  price={1000}
+  priceFormatted="1000 R$"
+>
+  <styled.div>
+    <div
+      className="sc-bdVaJa hNlXVo"
+    >
+      <Card
+        tag="div"
+      >
+        <div
+          className="card"
+        >
+          <Styled(CardImg)
+            src="test.png"
+            top={true}
+            width="100%"
+          >
+            <CardImg
+              className="sc-bwzfXH cDhPkI"
+              src="test.png"
+              tag="img"
+              top={true}
+              width="100%"
+            >
+              <img
+                className="sc-bwzfXH cDhPkI card-img-top"
+                src="test.png"
+                width="100%"
+              />
+            </CardImg>
+          </Styled(CardImg)>
+          <CardBody
+            tag="div"
+          >
+            <div
+              className="card-body"
+            >
+              <Styled(CardTitle)>
+                <CardTitle
+                  className="sc-htpNat kAvNiS"
+                  tag="h5"
+                >
+                  <h5
+                    className="sc-htpNat kAvNiS card-title"
+                  >
+                    brandName
+                  </h5>
+                </CardTitle>
+              </Styled(CardTitle)>
+              <Styled(CardSubtitle)>
+                <CardSubtitle
+                  className="sc-bxivhb dyXxrV"
+                  tag="h6"
+                >
+                  <h6
+                    className="sc-bxivhb dyXxrV card-subtitle"
+                  >
+                    description
+                  </h6>
+                </CardSubtitle>
+              </Styled(CardSubtitle)>
+              <div>
+                <div
+                  className="item__price"
+                >
+                  1000 R$
+                </div>
+                <div
+                  className="item__parcels"
+                >
+                  12x 83.33 €
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </div>
+      </Card>
+    </div>
+  </styled.div>
+</Item>
+`;

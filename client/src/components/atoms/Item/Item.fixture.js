@@ -1,9 +1,10 @@
 import Item from './Item'
+import image from './__tests__/test.png'
 
 export default {
   component: Item,
   props: {
-    image: 'https://cdn-images.farfetch.com/rochas-jacquard-pencil-skirt_12235260_10683272_250.jpg',
+    image: image,
     brandName: 'brandName',
     description: 'description',
     price: 1000,
