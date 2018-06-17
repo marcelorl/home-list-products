@@ -9,7 +9,7 @@ export const requestProductsSuccess = createAction('PRODUCTS_SUCCESS_FETCH')
 const dependencies = { axios }
 
 export const fetchProducts = injection => {
-  const { axios } = { ...dependencies, injection }
+  const { axios } = Object.assign({}, dependencies, injection)
 
   return dispatch => {
     dispatch(requestProducts())

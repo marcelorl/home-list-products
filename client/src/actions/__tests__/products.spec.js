@@ -1,7 +1,10 @@
+import configureMockStore from '../../services/ConfigureMockStore/configureMockStore'
 import {
   requestProductsFail,
   requestProducts,
-  requestProductsSuccess
+  requestProductsSuccess,
+
+  fetchProducts
 } from '../products'
 
 const products = [{}, {}, {}]
@@ -35,6 +38,50 @@ describe('#products', () => {
       }
 
       expect(requestProductsFail(err)).toEqual(expectedAction)
+    })
+  })
+
+  describe('#requests', () => {
+    let store
+    const success = {
+      data: {
+        entries: products
+      }
+    }
+
+    const axios = {
+      get: jest
+        .fn()
+        .mockImplementationOnce(() => Promise.resolve(success))
+        .mockImplementationOnce(() => Promise.reject(err))
+    };
+
+    beforeEach(() => {
+      store = configureMockStore({})
+    })
+
+    describe('#fetchProducts', () => {
+      it('should fetchProducts success', async () => {
+        const expectedActions = [
+          { type: 'PRODUCTS_REQUEST_FETCH' },
+          { type: 'PRODUCTS_SUCCESS_FETCH', payload: { products } }
+        ]
+
+        await store.dispatch(fetchProducts({ axios }))
+
+        expect(store.getActions()).toEqual(expectedActions)
+      })
+
+      it('should fetchProducts fail', async () => {
+        const expectedActions = [
+          { type: 'PRODUCTS_REQUEST_FETCH' },
+          { type: 'PRODUCTS_FAIL_FETCH', payload: new Error(err), error: true }
+        ]
+
+        await store.dispatch(fetchProducts({ axios }))
+
+        expect(store.getActions()).toEqual(expectedActions)
+      })
     })
   })
 })
