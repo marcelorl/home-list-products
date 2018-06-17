@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Breadcrumb atom renders component 1`] = `
+<Breadcrumb
+  items={
+    Array [
+      Object {
+        "label": "Início",
+        "link": "#/inicio",
+      },
+      Object {
+        "label": "Homem",
+        "link": "#/homem",
+      },
+      Object {
+        "label": "Novidades Internacionais",
+        "link": "#",
+      },
+    ]
+  }
+>
+  <styled.ul>
+    <ul
+      className="sc-bdVaJa Bzosa"
+    >
+      <styled.li
+        key="Início"
+      >
+        <li
+          className="sc-bwzfXH ihlxUm"
+        >
+          <a
+            href="#/inicio"
+          >
+            Início
+          </a>
+        </li>
+      </styled.li>
+      <styled.li
+        key="Homem"
+      >
+        <li
+          className="sc-bwzfXH ihlxUm"
+        >
+          <a
+            href="#/homem"
+          >
+            Homem
+          </a>
+        </li>
+      </styled.li>
+      <styled.li
+        key="Novidades Internacionais"
+      >
+        <li
+          className="sc-bwzfXH ihlxUm"
+        >
+          <a
+            href="#"
+          >
+            Novidades Internacionais
+          </a>
+        </li>
+      </styled.li>
+    </ul>
+  </styled.ul>
+</Breadcrumb>
+`;
