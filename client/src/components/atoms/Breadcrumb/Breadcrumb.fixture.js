@@ -4,9 +4,9 @@ export default {
   component: Breadcrumb,
   props: {
     items: [
-      { link: '#/inicio', label: 'Início' },
-      { link: '#/homem', label: 'Homem' },
-      { link: '#', label: 'Novidades Internacionais' }
+      { link: '/inicio', label: 'Início' },
+      { link: '/homem', label: 'Homem' },
+      { link: '/', label: 'Novidades Internacionais' }
     ]
   }
 }

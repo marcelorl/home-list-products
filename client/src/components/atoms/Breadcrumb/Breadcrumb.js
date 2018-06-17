@@ -25,7 +25,7 @@ const Item = styled.li`
 `
 
 const Breadcrumb = ({ items }) =>
-  <BreadcrumbContainer>
+  <BreadcrumbContainer className='breadcrumb'>
     {items.map((item, index) =>
       <Item key={item.label}>
         <a href={item.link}>{item.label}</a>

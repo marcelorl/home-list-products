@@ -14,9 +14,9 @@ const NavbarContainer = styled.div`
 `
 
 const links = [
-  { link: '#/inicio', label: 'Início' },
-  { link: '#/homem', label: 'Homem' },
-  { link: '#', label: 'Novidades Internacionais' }
+  { link: '/inicio', label: 'Início' },
+  { link: '/homem', label: 'Homem' },
+  { link: '/', label: 'Novidades Internacionais' }
 ]
 
 const SubHeader = props =>
@@ -26,10 +26,10 @@ const SubHeader = props =>
       <div>
         <h1>NOVIDADES DA MODA MASCULINA INTERNACIONAL</h1>
       </div>
-      <div>
+      <div className='subheader__description'>
         O melhor da moda masculina atual e as peças mais recentes das marcas internacionais chegaram à seleção online da
         Farfetch. Descubra novidades da moda masculina e tendências que grandes designers para renovar o guarda-roupas,
-        de <a href='#'>Salvatore Ferragamo</a> à <a href='#'>Burberry</a>.
+        de <a href='/'>Salvatore Ferragamo</a> à <a href='/'>Burberry</a>.
       </div>
     </Container>
   </NavbarContainer>

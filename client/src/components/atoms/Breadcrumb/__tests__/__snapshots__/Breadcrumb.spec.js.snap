@@ -6,22 +6,24 @@ exports[`#Breadcrumb atom renders component 1`] = `
     Array [
       Object {
         "label": "Início",
-        "link": "#/inicio",
+        "link": "/inicio",
       },
       Object {
         "label": "Homem",
-        "link": "#/homem",
+        "link": "/homem",
       },
       Object {
         "label": "Novidades Internacionais",
-        "link": "#",
+        "link": "/",
       },
     ]
   }
 >
-  <styled.ul>
+  <styled.ul
+    className="breadcrumb"
+  >
     <ul
-      className="sc-bdVaJa Bzosa"
+      className="breadcrumb sc-bdVaJa Bzosa"
     >
       <styled.li
         key="Início"
@@ -30,7 +32,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
           className="sc-bwzfXH ihlxUm"
         >
           <a
-            href="#/inicio"
+            href="/inicio"
           >
             Início
           </a>
@@ -43,7 +45,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
           className="sc-bwzfXH ihlxUm"
         >
           <a
-            href="#/homem"
+            href="/homem"
           >
             Homem
           </a>
@@ -56,7 +58,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
           className="sc-bwzfXH ihlxUm"
         >
           <a
-            href="#"
+            href="/"
           >
             Novidades Internacionais
           </a>
