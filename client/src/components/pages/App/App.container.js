@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
@@ -19,13 +20,19 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = ({ products }) =>
-  ({
-    products
-  })
+const mapStateToProps = ({ products }) => ({ products })
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   fetchProducts
 }, dispatch)
+
+App.propTypes = {
+  fetchProducts: PropTypes.func.isRequired,
+  products: PropTypes.shape({
+    list: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired,
+    error: PropTypes.string
+  }).isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)

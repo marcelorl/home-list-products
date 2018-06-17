@@ -16,9 +16,10 @@ const middlewares = applyMiddleware(
   loggerMiddleware
 )
 
-const configureStore =
+const configureStore = initialState =>
   createStore(
     reducers,
+    initialState,
     composeWithDevTools(
       middlewares
     )
