@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Header atom renders component 1`] = `
+<Header>
+  <Styled(Navbar)
+    className="d-flex justify-content-center container-fluid px-0"
+    color="faded"
+    expand="lg"
+    light={true}
+  >
+    <Navbar
+      className="d-flex justify-content-center container-fluid px-0 sc-bdVaJa iQTWxT"
+      color="faded"
+      expand="lg"
+      light={true}
+      tag="nav"
+    >
+      <nav
+        className="d-flex justify-content-center container-fluid px-0 sc-bdVaJa iQTWxT navbar navbar-expand-lg navbar-light bg-faded"
+      >
+        <styled.img
+          alt="logo"
+          src="logo.png"
+        >
+          <img
+            alt="logo"
+            className="sc-bwzfXH kXPULw"
+            src="logo.png"
+          />
+        </styled.img>
+      </nav>
+    </Navbar>
+  </Styled(Navbar)>
+</Header>
+`;
