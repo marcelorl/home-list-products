@@ -11,10 +11,10 @@ describe('#Item atom', () => {
     expect(getWrapper()).toMatchSnapshot()
   })
 
-  it('has all data passed through props', () => {
-    expect(get('props').brandName).toEqual(getWrapper('.card-title').text())
-    expect(get('props').description).toEqual(getWrapper('.card-subtitle').text())
-    expect(get('props').priceFormatted).toContain(getWrapper('.item__price').text())
-    expect('12x 83.33 €').toContain(getWrapper('.item__parcels').text())
+  it('should have all data passed through props', () => {
+    expect(getWrapper('.card-title').text()).toEqual(get('props').brandName)
+    expect(getWrapper('.card-subtitle').text()).toEqual(get('props').description)
+    expect(getWrapper('.item__price').text()).toContain(get('props').priceFormatted)
+    expect(getWrapper('.item__parcels').text()).toContain('12x 83.33 €')
   })
 })
