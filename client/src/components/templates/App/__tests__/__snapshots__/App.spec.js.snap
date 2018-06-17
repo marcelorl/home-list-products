@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Breadcrumb atom renders component 1`] = `
+<App
+  products={
+    Object {
+      "error": "",
+      "list": Array [
+        Object {
+          "brand": Object {
+            "name": "Skiim",
+          },
+          "formattedPrice": "1 194,18 €",
+          "id": 12266474,
+          "images": Array [
+            Object {},
+            Object {
+              "size": "250",
+              "url": "test.png",
+            },
+          ],
+          "price": 1194.1849,
+          "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+        },
+        Object {
+          "brand": Object {
+            "name": "Skiim",
+          },
+          "formattedPrice": "1 194,18 €",
+          "id": 12266475,
+          "images": Array [
+            Object {},
+            Object {
+              "size": "250",
+              "url": "test.png",
+            },
+          ],
+          "price": 1194.1849,
+          "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+        },
+      ],
+      "loading": false,
+    }
+  }
+>
+  <styled.div>
+    <div
+      className="sc-gZMcBi cQTtLh"
+    >
+      <Header>
+        <Styled(Navbar)
+          className="d-flex justify-content-center container-fluid px-0"
+          color="faded"
+          expand="lg"
+          light={true}
+        >
+          <Navbar
+            className="d-flex justify-content-center container-fluid px-0 sc-bdVaJa iQTWxT"
+            color="faded"
+            expand="lg"
+            light={true}
+            tag="nav"
+          >
+            <nav
+              className="d-flex justify-content-center container-fluid px-0 sc-bdVaJa iQTWxT navbar navbar-expand-lg navbar-light bg-faded"
+            >
+              <styled.img
+                alt="logo"
+                src="logo.png"
+              >
+                <img
+                  alt="logo"
+                  className="sc-bwzfXH kXPULw"
+                  src="logo.png"
+                />
+              </styled.img>
+            </nav>
+          </Navbar>
+        </Styled(Navbar)>
+      </Header>
+      <SubHeader>
+        <styled.div>
+          <div
+            className="sc-ifAKCX iVGUfa"
+          >
+            <Container
+              tag="div"
+            >
+              <div
+                className="container"
+              >
+                <Breadcrumb
+                  items={
+                    Array [
+                      Object {
+                        "label": "Início",
+                        "link": "/inicio",
+                      },
+                      Object {
+                        "label": "Homem",
+                        "link": "/homem",
+                      },
+                      Object {
+                        "label": "Novidades Internacionais",
+                        "link": "/",
+                      },
+                    ]
+                  }
+                >
+                  <styled.ul
+                    className="breadcrumb"
+                  >
+                    <ul
+                      className="breadcrumb sc-htpNat hGSyn"
+                    >
+                      <styled.li
+                        key="Início"
+                      >
+                        <li
+                          className="sc-bxivhb QZhb"
+                        >
+                          <a
+                            href="/inicio"
+                          >
+                            Início
+                          </a>
+                        </li>
+                      </styled.li>
+                      <styled.li
+                        key="Homem"
+                      >
+                        <li
+                          className="sc-bxivhb QZhb"
+                        >
+                          <a
+                            href="/homem"
+                          >
+                            Homem
+                          </a>
+                        </li>
+                      </styled.li>
+                      <styled.li
+                        key="Novidades Internacionais"
+                      >
+                        <li
+                          className="sc-bxivhb QZhb"
+                        >
+                          <a
+                            href="/"
+                          >
+                            Novidades Internacionais
+                          </a>
+                        </li>
+                      </styled.li>
+                    </ul>
+                  </styled.ul>
+                </Breadcrumb>
+                <div>
+                  <h1>
+                    NOVIDADES DA MODA MASCULINA INTERNACIONAL
+                  </h1>
+                </div>
+                <div
+                  className="subheader__description"
+                >
+                  O melhor da moda masculina atual e as peças mais recentes das marcas internacionais chegaram à seleção online da Farfetch. Descubra novidades da moda masculina e tendências que grandes designers para renovar o guarda-roupas, de 
+                  <a
+                    href="/"
+                  >
+                    Salvatore Ferragamo
+                  </a>
+                   à 
+                  <a
+                    href="/"
+                  >
+                    Burberry
+                  </a>
+                  .
+                </div>
+              </div>
+            </Container>
+          </div>
+        </styled.div>
+      </SubHeader>
+      <ListProducts
+        products={
+          Object {
+            "error": "",
+            "list": Array [
+              Object {
+                "brand": Object {
+                  "name": "Skiim",
+                },
+                "formattedPrice": "1 194,18 €",
+                "id": 12266474,
+                "images": Array [
+                  Object {},
+                  Object {
+                    "size": "250",
+                    "url": "test.png",
+                  },
+                ],
+                "price": 1194.1849,
+                "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+              },
+              Object {
+                "brand": Object {
+                  "name": "Skiim",
+                },
+                "formattedPrice": "1 194,18 €",
+                "id": 12266475,
+                "images": Array [
+                  Object {},
+                  Object {
+                    "size": "250",
+                    "url": "test.png",
+                  },
+                ],
+                "price": 1194.1849,
+                "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+              },
+            ],
+            "loading": false,
+          }
+        }
+      >
+        <styled.div>
+          <div
+            className="sc-dnqmqq irsWwO"
+          >
+            <Container
+              tag="div"
+            >
+              <div
+                className="container"
+              >
+                <styled.div>
+                  <div
+                    className="sc-iwsKbI Jjtqy"
+                  >
+                    <Item
+                      brandName="Skiim"
+                      description="Lucy Patent Leather high-waisted pencil skirt "
+                      image="test.png"
+                      key="12266474"
+                      price={1194.1849}
+                      priceFormatted="1 194,18 €"
+                    >
+                      <styled.div>
+                        <div
+                          className="sc-EHOje gUdhUV"
+                        >
+                          <Card
+                            tag="div"
+                          >
+                            <div
+                              className="card"
+                            >
+                              <Styled(CardImg)
+                                src="test.png"
+                                top={true}
+                                width="100%"
+                              >
+                                <CardImg
+                                  className="sc-bZQynM iOWXCy"
+                                  src="test.png"
+                                  tag="img"
+                                  top={true}
+                                  width="100%"
+                                >
+                                  <img
+                                    className="sc-bZQynM iOWXCy card-img-top"
+                                    src="test.png"
+                                    width="100%"
+                                  />
+                                </CardImg>
+                              </Styled(CardImg)>
+                              <CardBody
+                                tag="div"
+                              >
+                                <div
+                                  className="card-body"
+                                >
+                                  <Styled(CardTitle)>
+                                    <CardTitle
+                                      className="sc-gzVnrw cJxkpY"
+                                      tag="h5"
+                                    >
+                                      <h5
+                                        className="sc-gzVnrw cJxkpY card-title"
+                                      >
+                                        Skiim
+                                      </h5>
+                                    </CardTitle>
+                                  </Styled(CardTitle)>
+                                  <Styled(CardSubtitle)>
+                                    <CardSubtitle
+                                      className="sc-htoDjs fNBXrb"
+                                      tag="h6"
+                                    >
+                                      <h6
+                                        className="sc-htoDjs fNBXrb card-subtitle"
+                                      >
+                                        Lucy Patent Leather high-waisted pencil skirt 
+                                      </h6>
+                                    </CardSubtitle>
+                                  </Styled(CardSubtitle)>
+                                  <div>
+                                    <div
+                                      className="item__price"
+                                    >
+                                      1 194,18 €
+                                    </div>
+                                    <div
+                                      className="item__parcels"
+                                    >
+                                      12x 99.52 €
+                                    </div>
+                                  </div>
+                                </div>
+                              </CardBody>
+                            </div>
+                          </Card>
+                        </div>
+                      </styled.div>
+                    </Item>
+                    <Item
+                      brandName="Skiim"
+                      description="Lucy Patent Leather high-waisted pencil skirt "
+                      image="test.png"
+                      key="12266475"
+                      price={1194.1849}
+                      priceFormatted="1 194,18 €"
+                    >
+                      <styled.div>
+                        <div
+                          className="sc-EHOje gUdhUV"
+                        >
+                          <Card
+                            tag="div"
+                          >
+                            <div
+                              className="card"
+                            >
+                              <Styled(CardImg)
+                                src="test.png"
+                                top={true}
+                                width="100%"
+                              >
+                                <CardImg
+                                  className="sc-bZQynM iOWXCy"
+                                  src="test.png"
+                                  tag="img"
+                                  top={true}
+                                  width="100%"
+                                >
+                                  <img
+                                    className="sc-bZQynM iOWXCy card-img-top"
+                                    src="test.png"
+                                    width="100%"
+                                  />
+                                </CardImg>
+                              </Styled(CardImg)>
+                              <CardBody
+                                tag="div"
+                              >
+                                <div
+                                  className="card-body"
+                                >
+                                  <Styled(CardTitle)>
+                                    <CardTitle
+                                      className="sc-gzVnrw cJxkpY"
+                                      tag="h5"
+                                    >
+                                      <h5
+                                        className="sc-gzVnrw cJxkpY card-title"
+                                      >
+                                        Skiim
+                                      </h5>
+                                    </CardTitle>
+                                  </Styled(CardTitle)>
+                                  <Styled(CardSubtitle)>
+                                    <CardSubtitle
+                                      className="sc-htoDjs fNBXrb"
+                                      tag="h6"
+                                    >
+                                      <h6
+                                        className="sc-htoDjs fNBXrb card-subtitle"
+                                      >
+                                        Lucy Patent Leather high-waisted pencil skirt 
+                                      </h6>
+                                    </CardSubtitle>
+                                  </Styled(CardSubtitle)>
+                                  <div>
+                                    <div
+                                      className="item__price"
+                                    >
+                                      1 194,18 €
+                                    </div>
+                                    <div
+                                      className="item__parcels"
+                                    >
+                                      12x 99.52 €
+                                    </div>
+                                  </div>
+                                </div>
+                              </CardBody>
+                            </div>
+                          </Card>
+                        </div>
+                      </styled.div>
+                    </Item>
+                  </div>
+                </styled.div>
+              </div>
+            </Container>
+          </div>
+        </styled.div>
+      </ListProducts>
+    </div>
+  </styled.div>
+</App>
+`;
