@@ -15,7 +15,19 @@ export const fetchProducts = injection => {
     dispatch(requestProducts())
 
     return axios.get('/products')
-      .then(({ data: { entries } }) => dispatch(requestProductsSuccess({ products: entries })))
+      .then(({ data: { entries } }) => {
+        const products = entries.map(item => ({
+          id: item.id,
+          brandName: item.brand.name,
+          description: item.shortDescription,
+          image: item.images[1].url,
+          price: item.price,
+          priceFormatted: item.formattedPrice,
+          slug: item.slug
+        }))
+
+        return dispatch(requestProductsSuccess({ products }))
+      })
       .catch(err => dispatch(requestProductsFail(new Error(err))))
   }
 }

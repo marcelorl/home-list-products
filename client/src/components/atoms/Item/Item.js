@@ -59,6 +59,7 @@ const CustomCardImg = styled(CardImg)`
 
 const CustomCardTitle = styled(CardTitle)`
   font-size: 0.8rem;
+  height: 2rem;
   text-transform: uppercase;
 `
 
@@ -76,7 +77,7 @@ const Item = props => {
   }
 
   return (
-    <Col>
+    <Col className='item__container'>
       <Card>
         <CustomCardImg top width='100%' src={props.image} alt={props.slug} />
         <CardBody>

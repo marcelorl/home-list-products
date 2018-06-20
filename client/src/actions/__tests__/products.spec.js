@@ -6,8 +6,10 @@ import {
 
   fetchProducts
 } from '../products'
+import { Product, ProductResponse } from '../../models/product'
 
-const products = [{}, {}, {}]
+const product = Product.buildList(3)
+const productResponse = ProductResponse.buildList(3)
 
 const err = new TypeError('ERROR')
 
@@ -24,10 +26,10 @@ describe('#products', () => {
     it('should create an action to fetch products success', () => {
       const expectedAction = {
         type: 'PRODUCTS_SUCCESS_FETCH',
-        payload: { products }
+        payload: { products: product }
       }
 
-      expect(requestProductsSuccess({ products })).toEqual(expectedAction)
+      expect(requestProductsSuccess({ products: product })).toEqual(expectedAction)
     })
 
     it('should create an action to fetch products fail', () => {
@@ -45,7 +47,7 @@ describe('#products', () => {
     let store
     const success = {
       data: {
-        entries: products
+        entries: productResponse
       }
     }
 
@@ -64,7 +66,7 @@ describe('#products', () => {
       it('should fetchProducts success', async () => {
         const expectedActions = [
           { type: 'PRODUCTS_REQUEST_FETCH' },
-          { type: 'PRODUCTS_SUCCESS_FETCH', payload: { products } }
+          { type: 'PRODUCTS_SUCCESS_FETCH', payload: { products: product } }
         ]
 
         await store.dispatch(fetchProducts({ axios }))

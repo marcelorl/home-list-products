@@ -1,42 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`#Breadcrumb atom renders component 1`] = `
+exports[`#App template renders component 1`] = `
 <App
   products={
     Object {
       "error": "",
       "list": Array [
         Object {
-          "brand": Object {
-            "name": "Skiim",
-          },
-          "formattedPrice": "1 194,18 €",
-          "id": 12266474,
-          "images": Array [
-            Object {},
-            Object {
-              "size": "250",
-              "url": "test.png",
-            },
-          ],
-          "price": 1194.1849,
-          "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+          "brandName": "brandName",
+          "description": "this is just a short description",
+          "id": 1,
+          "image": "test.png",
+          "price": 1000,
+          "priceFormatted": "1000 R$",
+          "slug": "http://test.com",
         },
         Object {
-          "brand": Object {
-            "name": "Skiim",
-          },
-          "formattedPrice": "1 194,18 €",
-          "id": 12266475,
-          "images": Array [
-            Object {},
-            Object {
-              "size": "250",
-              "url": "test.png",
-            },
-          ],
-          "price": 1194.1849,
-          "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+          "brandName": "brandName",
+          "description": "this is just a short description",
+          "id": 2,
+          "image": "test.png",
+          "price": 1000,
+          "priceFormatted": "1000 R$",
+          "slug": "http://test.com",
+        },
+        Object {
+          "brandName": "brandName",
+          "description": "this is just a short description",
+          "id": 3,
+          "image": "test.png",
+          "price": 1000,
+          "priceFormatted": "1000 R$",
+          "slug": "http://test.com",
         },
       ],
       "loading": false,
@@ -188,36 +183,31 @@ exports[`#Breadcrumb atom renders component 1`] = `
             "error": "",
             "list": Array [
               Object {
-                "brand": Object {
-                  "name": "Skiim",
-                },
-                "formattedPrice": "1 194,18 €",
-                "id": 12266474,
-                "images": Array [
-                  Object {},
-                  Object {
-                    "size": "250",
-                    "url": "test.png",
-                  },
-                ],
-                "price": 1194.1849,
-                "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+                "brandName": "brandName",
+                "description": "this is just a short description",
+                "id": 1,
+                "image": "test.png",
+                "price": 1000,
+                "priceFormatted": "1000 R$",
+                "slug": "http://test.com",
               },
               Object {
-                "brand": Object {
-                  "name": "Skiim",
-                },
-                "formattedPrice": "1 194,18 €",
-                "id": 12266475,
-                "images": Array [
-                  Object {},
-                  Object {
-                    "size": "250",
-                    "url": "test.png",
-                  },
-                ],
-                "price": 1194.1849,
-                "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
+                "brandName": "brandName",
+                "description": "this is just a short description",
+                "id": 2,
+                "image": "test.png",
+                "price": 1000,
+                "priceFormatted": "1000 R$",
+                "slug": "http://test.com",
+              },
+              Object {
+                "brandName": "brandName",
+                "description": "this is just a short description",
+                "id": 3,
+                "image": "test.png",
+                "price": 1000,
+                "priceFormatted": "1000 R$",
+                "slug": "http://test.com",
               },
             ],
             "loading": false,
@@ -239,16 +229,20 @@ exports[`#Breadcrumb atom renders component 1`] = `
                     className="sc-iwsKbI Jjtqy"
                   >
                     <Item
-                      brandName="Skiim"
-                      description="Lucy Patent Leather high-waisted pencil skirt "
+                      brandName="brandName"
+                      description="this is just a short description"
+                      id={1}
                       image="test.png"
-                      key="12266474"
-                      price={1194.1849}
-                      priceFormatted="1 194,18 €"
+                      key="1"
+                      price={1000}
+                      priceFormatted="1000 R$"
+                      slug="http://test.com"
                     >
-                      <styled.div>
+                      <styled.div
+                        className="item__container"
+                      >
                         <div
-                          className="sc-EHOje gUdhUV"
+                          className="item__container sc-EHOje gUdhUV"
                         >
                           <Card
                             tag="div"
@@ -257,11 +251,13 @@ exports[`#Breadcrumb atom renders component 1`] = `
                               className="card"
                             >
                               <Styled(CardImg)
+                                alt="http://test.com"
                                 src="test.png"
                                 top={true}
                                 width="100%"
                               >
                                 <CardImg
+                                  alt="http://test.com"
                                   className="sc-bZQynM iOWXCy"
                                   src="test.png"
                                   tag="img"
@@ -269,6 +265,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                   width="100%"
                                 >
                                   <img
+                                    alt="http://test.com"
                                     className="sc-bZQynM iOWXCy card-img-top"
                                     src="test.png"
                                     width="100%"
@@ -283,13 +280,13 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                 >
                                   <Styled(CardTitle)>
                                     <CardTitle
-                                      className="sc-gzVnrw cJxkpY"
+                                      className="sc-gzVnrw dvnGhf"
                                       tag="h5"
                                     >
                                       <h5
-                                        className="sc-gzVnrw cJxkpY card-title"
+                                        className="sc-gzVnrw dvnGhf card-title"
                                       >
-                                        Skiim
+                                        brandName
                                       </h5>
                                     </CardTitle>
                                   </Styled(CardTitle)>
@@ -301,7 +298,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                       <h6
                                         className="sc-htoDjs fNBXrb card-subtitle"
                                       >
-                                        Lucy Patent Leather high-waisted pencil skirt 
+                                        this is just a short description
                                       </h6>
                                     </CardSubtitle>
                                   </Styled(CardSubtitle)>
@@ -309,12 +306,12 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                     <div
                                       className="item__price"
                                     >
-                                      1 194,18 €
+                                      1000 R$
                                     </div>
                                     <div
                                       className="item__parcels"
                                     >
-                                      12x 99.52 €
+                                      12x 83.33 €
                                     </div>
                                   </div>
                                 </div>
@@ -325,16 +322,20 @@ exports[`#Breadcrumb atom renders component 1`] = `
                       </styled.div>
                     </Item>
                     <Item
-                      brandName="Skiim"
-                      description="Lucy Patent Leather high-waisted pencil skirt "
+                      brandName="brandName"
+                      description="this is just a short description"
+                      id={2}
                       image="test.png"
-                      key="12266475"
-                      price={1194.1849}
-                      priceFormatted="1 194,18 €"
+                      key="2"
+                      price={1000}
+                      priceFormatted="1000 R$"
+                      slug="http://test.com"
                     >
-                      <styled.div>
+                      <styled.div
+                        className="item__container"
+                      >
                         <div
-                          className="sc-EHOje gUdhUV"
+                          className="item__container sc-EHOje gUdhUV"
                         >
                           <Card
                             tag="div"
@@ -343,11 +344,13 @@ exports[`#Breadcrumb atom renders component 1`] = `
                               className="card"
                             >
                               <Styled(CardImg)
+                                alt="http://test.com"
                                 src="test.png"
                                 top={true}
                                 width="100%"
                               >
                                 <CardImg
+                                  alt="http://test.com"
                                   className="sc-bZQynM iOWXCy"
                                   src="test.png"
                                   tag="img"
@@ -355,6 +358,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                   width="100%"
                                 >
                                   <img
+                                    alt="http://test.com"
                                     className="sc-bZQynM iOWXCy card-img-top"
                                     src="test.png"
                                     width="100%"
@@ -369,13 +373,13 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                 >
                                   <Styled(CardTitle)>
                                     <CardTitle
-                                      className="sc-gzVnrw cJxkpY"
+                                      className="sc-gzVnrw dvnGhf"
                                       tag="h5"
                                     >
                                       <h5
-                                        className="sc-gzVnrw cJxkpY card-title"
+                                        className="sc-gzVnrw dvnGhf card-title"
                                       >
-                                        Skiim
+                                        brandName
                                       </h5>
                                     </CardTitle>
                                   </Styled(CardTitle)>
@@ -387,7 +391,7 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                       <h6
                                         className="sc-htoDjs fNBXrb card-subtitle"
                                       >
-                                        Lucy Patent Leather high-waisted pencil skirt 
+                                        this is just a short description
                                       </h6>
                                     </CardSubtitle>
                                   </Styled(CardSubtitle)>
@@ -395,12 +399,105 @@ exports[`#Breadcrumb atom renders component 1`] = `
                                     <div
                                       className="item__price"
                                     >
-                                      1 194,18 €
+                                      1000 R$
                                     </div>
                                     <div
                                       className="item__parcels"
                                     >
-                                      12x 99.52 €
+                                      12x 83.33 €
+                                    </div>
+                                  </div>
+                                </div>
+                              </CardBody>
+                            </div>
+                          </Card>
+                        </div>
+                      </styled.div>
+                    </Item>
+                    <Item
+                      brandName="brandName"
+                      description="this is just a short description"
+                      id={3}
+                      image="test.png"
+                      key="3"
+                      price={1000}
+                      priceFormatted="1000 R$"
+                      slug="http://test.com"
+                    >
+                      <styled.div
+                        className="item__container"
+                      >
+                        <div
+                          className="item__container sc-EHOje gUdhUV"
+                        >
+                          <Card
+                            tag="div"
+                          >
+                            <div
+                              className="card"
+                            >
+                              <Styled(CardImg)
+                                alt="http://test.com"
+                                src="test.png"
+                                top={true}
+                                width="100%"
+                              >
+                                <CardImg
+                                  alt="http://test.com"
+                                  className="sc-bZQynM iOWXCy"
+                                  src="test.png"
+                                  tag="img"
+                                  top={true}
+                                  width="100%"
+                                >
+                                  <img
+                                    alt="http://test.com"
+                                    className="sc-bZQynM iOWXCy card-img-top"
+                                    src="test.png"
+                                    width="100%"
+                                  />
+                                </CardImg>
+                              </Styled(CardImg)>
+                              <CardBody
+                                tag="div"
+                              >
+                                <div
+                                  className="card-body"
+                                >
+                                  <Styled(CardTitle)>
+                                    <CardTitle
+                                      className="sc-gzVnrw dvnGhf"
+                                      tag="h5"
+                                    >
+                                      <h5
+                                        className="sc-gzVnrw dvnGhf card-title"
+                                      >
+                                        brandName
+                                      </h5>
+                                    </CardTitle>
+                                  </Styled(CardTitle)>
+                                  <Styled(CardSubtitle)>
+                                    <CardSubtitle
+                                      className="sc-htoDjs fNBXrb"
+                                      tag="h6"
+                                    >
+                                      <h6
+                                        className="sc-htoDjs fNBXrb card-subtitle"
+                                      >
+                                        this is just a short description
+                                      </h6>
+                                    </CardSubtitle>
+                                  </Styled(CardSubtitle)>
+                                  <div>
+                                    <div
+                                      className="item__price"
+                                    >
+                                      1000 R$
+                                    </div>
+                                    <div
+                                      className="item__parcels"
+                                    >
+                                      12x 83.33 €
                                     </div>
                                   </div>
                                 </div>

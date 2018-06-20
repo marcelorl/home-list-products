@@ -22,7 +22,6 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
-    "faker": "^4.1.0",
     "jest-enzyme": "^6.0.1",
     "react-cosmos": "^4.4.0",
     "react-cosmos-redux-proxy": "^4.4.0",
@@ -30,7 +29,8 @@
     "react-cosmos-xhr-proxy": "^4.5.0",
     "react-test-renderer": "^16.4.0",
     "redux-devtools-extension": "^2.13.2",
-    "redux-mock-store": "^1.5.1"
+    "redux-mock-store": "^1.5.1",
+    "rosie": "^2.0.1"
   },
   "scripts": {
     "start": "react-app-rewired start",

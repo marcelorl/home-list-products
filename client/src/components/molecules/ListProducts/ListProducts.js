@@ -37,17 +37,7 @@ const ListProducts = ({ products: { error, list, loading } }) => {
     <ListProductsContainer>
       <Container>
         <ListContainer>
-          {list.map(item =>
-            <Item
-              key={item.id}
-              brandName={item.brand.name}
-              description={item.shortDescription}
-              image={item.images[1].url}
-              price={item.price}
-              priceFormatted={item.formattedPrice}
-              slug={item.slug}
-            />
-          )}
+          {list.map(item => <Item key={item.id} {...item} /> )}
         </ListContainer>
       </Container>
     </ListProductsContainer>

@@ -1,5 +1,7 @@
 import App from './App'
-import image from './__tests__/test.png'
+import { Product } from '../../../models/product'
+
+const productCollection = Product.buildList(3)
 
 export default {
   component: App,
@@ -7,40 +9,7 @@ export default {
     products: {
       error: '',
       loading: false,
-      list: [
-        {
-          "id": 12266474,
-          "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
-          "images": [
-            {},
-            {
-              "size": "250",
-              "url": image
-            }
-          ],
-          "price": 1194.1849,
-          "formattedPrice": "1 194,18 €",
-          "brand": {
-            "name": "Skiim"
-          }
-        },
-        {
-          "id": 12266475,
-          "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
-          "images": [
-            {},
-            {
-              "size": "250",
-              "url": image
-            }
-          ],
-          "price": 1194.1849,
-          "formattedPrice": "1 194,18 €",
-          "brand": {
-            "name": "Skiim"
-          }
-        }
-      ]
+      list: productCollection
     }
   }
 }

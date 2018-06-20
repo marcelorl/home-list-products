@@ -3,14 +3,18 @@
 exports[`#Item atom renders component 1`] = `
 <Item
   brandName="brandName"
-  description="description"
+  description="this is just a short description"
+  id={1}
   image="test.png"
   price={1000}
   priceFormatted="1000 R$"
+  slug="http://test.com"
 >
-  <styled.div>
+  <styled.div
+    className="item__container"
+  >
     <div
-      className="sc-bdVaJa hNlXVo"
+      className="item__container sc-bdVaJa hNlXVo"
     >
       <Card
         tag="div"
@@ -19,11 +23,13 @@ exports[`#Item atom renders component 1`] = `
           className="card"
         >
           <Styled(CardImg)
+            alt="http://test.com"
             src="test.png"
             top={true}
             width="100%"
           >
             <CardImg
+              alt="http://test.com"
               className="sc-bwzfXH cDhPkI"
               src="test.png"
               tag="img"
@@ -31,6 +37,7 @@ exports[`#Item atom renders component 1`] = `
               width="100%"
             >
               <img
+                alt="http://test.com"
                 className="sc-bwzfXH cDhPkI card-img-top"
                 src="test.png"
                 width="100%"
@@ -45,11 +52,11 @@ exports[`#Item atom renders component 1`] = `
             >
               <Styled(CardTitle)>
                 <CardTitle
-                  className="sc-htpNat kAvNiS"
+                  className="sc-htpNat CjrqO"
                   tag="h5"
                 >
                   <h5
-                    className="sc-htpNat kAvNiS card-title"
+                    className="sc-htpNat CjrqO card-title"
                   >
                     brandName
                   </h5>
@@ -63,7 +70,7 @@ exports[`#Item atom renders component 1`] = `
                   <h6
                     className="sc-bxivhb dyXxrV card-subtitle"
                   >
-                    description
+                    this is just a short description
                   </h6>
                 </CardSubtitle>
               </Styled(CardSubtitle)>

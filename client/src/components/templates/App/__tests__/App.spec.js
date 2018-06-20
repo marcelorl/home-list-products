@@ -6,12 +6,19 @@ const { mount, getWrapper } = createTestContext({ fixture })
 
 beforeEach(mount)
 
-describe('#Breadcrumb atom', () => {
+describe('#App template', () => {
   it('renders component', () => {
     expect(getWrapper()).toMatchSnapshot()
   })
 
-  it('should have breadcrumbs', () => {
-    expect(getWrapper('.container > div div')).toHaveLength(2)
+  describe('#breadcrumb', () => {
+    it('should exist', () => {
+      expect(getWrapper('.container ul.breadcrumb')).toHaveLength(1)
+    })
+
+    it('should have 3 items', () => {
+      expect(getWrapper('.container ul.breadcrumb li')).toHaveLength(3)
+    })
   })
+
 })

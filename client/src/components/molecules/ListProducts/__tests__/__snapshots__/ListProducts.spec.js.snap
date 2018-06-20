@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[object Object] 1`] = `
+<ListProducts
+  products={
+    Object {
+      "error": "",
+      "list": Array [
+        Object {
+          "brandName": "brandName",
+          "description": "this is just a short description",
+          "id": 1,
+          "image": "test.png",
+          "price": 1000,
+          "priceFormatted": "1000 R$",
+          "slug": "http://test.com",
+        },
+        Object {
+          "brandName": "brandName",
+          "description": "this is just a short description",
+          "id": 2,
+          "image": "test.png",
+          "price": 1000,
+          "priceFormatted": "1000 R$",
+          "slug": "http://test.com",
+        },
+        Object {
+          "brandName": "brandName",
+          "description": "this is just a short description",
+          "id": 3,
+          "image": "test.png",
+          "price": 1000,
+          "priceFormatted": "1000 R$",
+          "slug": "http://test.com",
+        },
+      ],
+      "loading": false,
+    }
+  }
+>
+  <styled.div>
+    <div
+      className="sc-ifAKCX gTERlH"
+    >
+      <Container
+        tag="div"
+      >
+        <div
+          className="container"
+        >
+          <styled.div>
+            <div
+              className="sc-EHOje iTpGDb"
+            >
+              <Item
+                brandName="brandName"
+                description="this is just a short description"
+                id={1}
+                image="test.png"
+                key="1"
+                price={1000}
+                priceFormatted="1000 R$"
+                slug="http://test.com"
+              >
+                <styled.div
+                  className="item__container"
+                >
+                  <div
+                    className="item__container sc-bdVaJa hNlXVo"
+                  >
+                    <Card
+                      tag="div"
+                    >
+                      <div
+                        className="card"
+                      >
+                        <Styled(CardImg)
+                          alt="http://test.com"
+                          src="test.png"
+                          top={true}
+                          width="100%"
+                        >
+                          <CardImg
+                            alt="http://test.com"
+                            className="sc-bwzfXH cDhPkI"
+                            src="test.png"
+                            tag="img"
+                            top={true}
+                            width="100%"
+                          >
+                            <img
+                              alt="http://test.com"
+                              className="sc-bwzfXH cDhPkI card-img-top"
+                              src="test.png"
+                              width="100%"
+                            />
+                          </CardImg>
+                        </Styled(CardImg)>
+                        <CardBody
+                          tag="div"
+                        >
+                          <div
+                            className="card-body"
+                          >
+                            <Styled(CardTitle)>
+                              <CardTitle
+                                className="sc-htpNat CjrqO"
+                                tag="h5"
+                              >
+                                <h5
+                                  className="sc-htpNat CjrqO card-title"
+                                >
+                                  brandName
+                                </h5>
+                              </CardTitle>
+                            </Styled(CardTitle)>
+                            <Styled(CardSubtitle)>
+                              <CardSubtitle
+                                className="sc-bxivhb dyXxrV"
+                                tag="h6"
+                              >
+                                <h6
+                                  className="sc-bxivhb dyXxrV card-subtitle"
+                                >
+                                  this is just a short description
+                                </h6>
+                              </CardSubtitle>
+                            </Styled(CardSubtitle)>
+                            <div>
+                              <div
+                                className="item__price"
+                              >
+                                1000 R$
+                              </div>
+                              <div
+                                className="item__parcels"
+                              >
+                                12x 83.33 €
+                              </div>
+                            </div>
+                          </div>
+                        </CardBody>
+                      </div>
+                    </Card>
+                  </div>
+                </styled.div>
+              </Item>
+              <Item
+                brandName="brandName"
+                description="this is just a short description"
+                id={2}
+                image="test.png"
+                key="2"
+                price={1000}
+                priceFormatted="1000 R$"
+                slug="http://test.com"
+              >
+                <styled.div
+                  className="item__container"
+                >
+                  <div
+                    className="item__container sc-bdVaJa hNlXVo"
+                  >
+                    <Card
+                      tag="div"
+                    >
+                      <div
+                        className="card"
+                      >
+                        <Styled(CardImg)
+                          alt="http://test.com"
+                          src="test.png"
+                          top={true}
+                          width="100%"
+                        >
+                          <CardImg
+                            alt="http://test.com"
+                            className="sc-bwzfXH cDhPkI"
+                            src="test.png"
+                            tag="img"
+                            top={true}
+                            width="100%"
+                          >
+                            <img
+                              alt="http://test.com"
+                              className="sc-bwzfXH cDhPkI card-img-top"
+                              src="test.png"
+                              width="100%"
+                            />
+                          </CardImg>
+                        </Styled(CardImg)>
+                        <CardBody
+                          tag="div"
+                        >
+                          <div
+                            className="card-body"
+                          >
+                            <Styled(CardTitle)>
+                              <CardTitle
+                                className="sc-htpNat CjrqO"
+                                tag="h5"
+                              >
+                                <h5
+                                  className="sc-htpNat CjrqO card-title"
+                                >
+                                  brandName
+                                </h5>
+                              </CardTitle>
+                            </Styled(CardTitle)>
+                            <Styled(CardSubtitle)>
+                              <CardSubtitle
+                                className="sc-bxivhb dyXxrV"
+                                tag="h6"
+                              >
+                                <h6
+                                  className="sc-bxivhb dyXxrV card-subtitle"
+                                >
+                                  this is just a short description
+                                </h6>
+                              </CardSubtitle>
+                            </Styled(CardSubtitle)>
+                            <div>
+                              <div
+                                className="item__price"
+                              >
+                                1000 R$
+                              </div>
+                              <div
+                                className="item__parcels"
+                              >
+                                12x 83.33 €
+                              </div>
+                            </div>
+                          </div>
+                        </CardBody>
+                      </div>
+                    </Card>
+                  </div>
+                </styled.div>
+              </Item>
+              <Item
+                brandName="brandName"
+                description="this is just a short description"
+                id={3}
+                image="test.png"
+                key="3"
+                price={1000}
+                priceFormatted="1000 R$"
+                slug="http://test.com"
+              >
+                <styled.div
+                  className="item__container"
+                >
+                  <div
+                    className="item__container sc-bdVaJa hNlXVo"
+                  >
+                    <Card
+                      tag="div"
+                    >
+                      <div
+                        className="card"
+                      >
+                        <Styled(CardImg)
+                          alt="http://test.com"
+                          src="test.png"
+                          top={true}
+                          width="100%"
+                        >
+                          <CardImg
+                            alt="http://test.com"
+                            className="sc-bwzfXH cDhPkI"
+                            src="test.png"
+                            tag="img"
+                            top={true}
+                            width="100%"
+                          >
+                            <img
+                              alt="http://test.com"
+                              className="sc-bwzfXH cDhPkI card-img-top"
+                              src="test.png"
+                              width="100%"
+                            />
+                          </CardImg>
+                        </Styled(CardImg)>
+                        <CardBody
+                          tag="div"
+                        >
+                          <div
+                            className="card-body"
+                          >
+                            <Styled(CardTitle)>
+                              <CardTitle
+                                className="sc-htpNat CjrqO"
+                                tag="h5"
+                              >
+                                <h5
+                                  className="sc-htpNat CjrqO card-title"
+                                >
+                                  brandName
+                                </h5>
+                              </CardTitle>
+                            </Styled(CardTitle)>
+                            <Styled(CardSubtitle)>
+                              <CardSubtitle
+                                className="sc-bxivhb dyXxrV"
+                                tag="h6"
+                              >
+                                <h6
+                                  className="sc-bxivhb dyXxrV card-subtitle"
+                                >
+                                  this is just a short description
+                                </h6>
+                              </CardSubtitle>
+                            </Styled(CardSubtitle)>
+                            <div>
+                              <div
+                                className="item__price"
+                              >
+                                1000 R$
+                              </div>
+                              <div
+                                className="item__parcels"
+                              >
+                                12x 83.33 €
+                              </div>
+                            </div>
+                          </div>
+                        </CardBody>
+                      </div>
+                    </Card>
+                  </div>
+                </styled.div>
+              </Item>
+            </div>
+          </styled.div>
+        </div>
+      </Container>
+    </div>
+  </styled.div>
+</ListProducts>
+`;

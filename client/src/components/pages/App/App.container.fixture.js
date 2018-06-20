@@ -1,40 +1,7 @@
 import AppContainer from './App.container'
-import image from './__tests__/test.png'
+import { ProductResponse } from '../../../models/product'
 
-const products = [
-  {
-    "id": 12266474,
-    "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
-    "images": [
-      {},
-      {
-        "size": "250",
-        "url": image
-      }
-    ],
-    "price": 1194.1849,
-    "formattedPrice": "1 194,18 €",
-    "brand": {
-      "name": "Skiim"
-    }
-  },
-  {
-    "id": 12266475,
-    "shortDescription": "Lucy Patent Leather high-waisted pencil skirt ",
-    "images": [
-      {},
-      {
-        "size": "250",
-        "url": image
-      }
-    ],
-    "price": 1194.1849,
-    "formattedPrice": "1 194,18 €",
-    "brand": {
-      "name": "Skiim"
-    }
-  }
-]
+const productCollection = ProductResponse.buildList(3)
 
 export default {
   component: AppContainer,
@@ -53,7 +20,7 @@ export default {
       url: '//localhost:1337/products',
       response: (req, res) =>
         res.status(200).body({
-          entries: products
+          entries: productCollection
         })
     }
   ]
