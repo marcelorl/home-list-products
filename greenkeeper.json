@@ -1,0 +1,22 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "api/package.json",
+        "client/package.json",
+        "client/src/components/atoms/Breadcrumb/package.json",
+        "client/src/components/atoms/Header/package.json",
+        "client/src/components/atoms/Item/package.json",
+        "client/src/components/molecules/ListProducts/package.json",
+        "client/src/components/molecules/SubHeader/package.json",
+        "client/src/components/pages/App/package.json",
+        "client/src/components/templates/App/package.json",
+        "client/src/reducers/package.json",
+        "client/src/services/ConfigureMockStore/package.json",
+        "client/src/services/History/package.json",
+        "client/src/services/Request/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
